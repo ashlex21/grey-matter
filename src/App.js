@@ -5,8 +5,9 @@ import Navigation from './components/Navigation/Navigation';
 import Logo from './components/Logo/Logo';
 import ImageLinkForm from './components/ImageLinkForm/ImageLinkForm';
 import Rank from './components/Rank/Rank';
-import Signin from './components/Signin/Signin'
-import Register from './components/Register/Register'
+import Signin from './components/Signin/Signin';
+import Register from './components/Register/Register';
+import Footer from './components/Footer/Footer';
 
 import { Component } from 'react';
 
@@ -153,6 +154,7 @@ class App extends Component {
 
         <Navigation isSignedIn={this.state.isSignedIn} onRouteChange={this.onRouteChange} />
         <Logo />
+        
         { this.state.route === 'home'
           ? <div>
 
@@ -174,6 +176,7 @@ class App extends Component {
 
 
         }
+        <Footer/>
       </div>
     );
   }
